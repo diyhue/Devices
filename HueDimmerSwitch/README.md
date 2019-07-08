@@ -7,4 +7,11 @@ Is mandatory to set wifi name, wifi password, bridge emulator and static ip fiel
 
 ## Circuit diagram
 
-![Circuit Diagram](https://github.com/mariusmotea/diyHue/raw/master/Images/Hue_Tap-Dimmer_switch_circuit_prototype.png)
+![Circuit Diagram](https://github.com/diyhue/Devices/raw/master/HueDimmerSwitch/Hue_Tap-Dimmer_switch_circuit_prototype.png)
+
+
+## PCB
+
+![PCB](https://github.com/diyhue/Devices/raw/master/HueDimmerSwitch/Hue_Tap-Dimmer_switch_circuit_prototype_pcb.png)
+
+The PCB that fit the [custom 3D print case made by Martin Cerny](https://www.thingiverse.com/thing:3641618) cand be ordered on JLCPCB or Elecrow. Just upload the gerber file from this folder and choose 1mm tick size. Will look better if the PCB color match the case.
