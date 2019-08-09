@@ -41,7 +41,7 @@ void goingToSleep() {
 }
 
 void blinkLed(uint8_t count, int interval = 500) {
-  for (uint8_t i = 0; i <= count; i++) {
+  for (uint8_t i = 0; i < count; i++) {
     digitalWrite(2, LOW);
     delay(interval);
     digitalWrite(2, HIGH);
