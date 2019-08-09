@@ -10,7 +10,7 @@ In order to solve rf interferences issue of the previews version now esp8266 is 
 
 ## Circuit diagram
 
-![Circuit Diagram](https://raw.githubusercontent.com/mariusmotea/diyHue/develop/Images/Hue_Motion_sensor_circuit_prototype_v2.png)
+![Circuit Diagram](https://github.com/diyhue/Devices/raw/master/HueMotionSensor/Schematic.png)
 
 ## Prototypes
 
