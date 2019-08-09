@@ -1,23 +1,32 @@
 ## How Is working
 
-Hue Motion sensor need to send the folowing informations to bridge:
- - light level (default is at every 20 minutes)
- - when motion is detectet (instant)
- - when there is no motions enymore (30 seconds after last motion detected)
- 
-Because deepsleep mode is used to preserve battery life the rtc memory is used to store the last state.
-In order to solve rf interferences issue of the previews version now esp8266 is wake up in non rf mode, read the GPIO pin states and then reset in default rf mode to send the data. This will add a very small delay (<500ms).
+On motion detection the AM312 pir will send a short negative pulse on ESP-M2 reset pin in order to wake him up from deep sleep and send a http request to hue emulator bridge with mac address and light level measured by the photoresistor. The logic state of this sensor will remain triggered until the sensor will not send anymore other request in 30 seconds interval.
+
+## Components
+
+ - ESP-M2 module
+ - MCP1700T 3.3V regulator
+ - 30mm x 40mm battery (803040 in my case)
+ - AM312 PIR module with lense
+ - 1 x NPN transitor (MMBT4401 in my case)
+ - 3 x 100k 0805 resistor
+ - 1 x 10k 0805 resistor
+ - 1 x 470ohm 0805 resistor
+ - 1 x 100nF 0603 capacitor
+ - 1 x 4,7uF 0603 capacitor
+ - 1 x 10uF 0805 capacitor
+ - 1 x SMD led
 
 ## Circuit diagram
 
-![Circuit Diagram](https://github.com/diyhue/Devices/raw/master/HueMotionSensor/Schematic.png)
+![Circuit Diagram](https://github.com/diyhue/Devices/raw/master/HueMotionSensor/images/Schematic.png)
 
-## Prototypes
+## Images
 
-![Prototype1](https://raw.githubusercontent.com/mariusmotea/diyHue/develop/Images/Motion_Sensor_1.jpg)
+![Case](https://github.com/diyhue/Devices/raw/master/HueMotionSensor/images/case.jpg)
 
-![Prototype1](https://raw.githubusercontent.com/mariusmotea/diyHue/develop/Images/Motion_Sensor_2.jpg)
+![Case-front](https://raw.githubusercontent.com/mariusmotea/diyHue/develop/Images/case-front.jpg)
 
-![Prototype1](https://raw.githubusercontent.com/mariusmotea/diyHue/develop/Images/Motion_Sensor_3.jpg)
+![Battery](https://raw.githubusercontent.com/mariusmotea/diyHue/develop/Images/battery.jpg)
 
-![Prototype1](https://raw.githubusercontent.com/mariusmotea/diyHue/develop/Images/Motion_Sensor_4.jpg)
+
