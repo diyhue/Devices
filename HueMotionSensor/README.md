@@ -25,8 +25,8 @@ On motion detection the AM312 pir will send a short negative pulse on ESP-M2 res
 
 ![Case](https://github.com/diyhue/Devices/raw/master/HueMotionSensor/images/case.jpg)
 
-![Case-front](https://raw.githubusercontent.com/mariusmotea/diyHue/develop/Images/case-front.jpg)
+![Case-front](https://github.com/diyhue/Devices/raw/master/HueMotionSensor/images/case-front.jpg)
 
-![Battery](https://raw.githubusercontent.com/mariusmotea/diyHue/develop/Images/battery.jpg)
+![Battery](https://github.com/diyhue/Devices/raw/master/HueMotionSensor/images/battery.jpg)
 
 
