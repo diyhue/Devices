@@ -124,7 +124,6 @@ void loop() {
       // httpCode will be negative on error
       if (httpCode > 0) {
         if (httpCode == HTTP_CODE_OK) {
-          blinkLed(1, 100);
           goingToSleep();
         } else {
           blinkLed(6);
