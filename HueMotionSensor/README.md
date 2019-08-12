@@ -27,11 +27,11 @@ Arduino OTA is integrated but it need to be activated by connecting GPIO4 to gro
 
 ## Led codes:
 
- - only short reset flash - the request was successfully sent to bridge emulator
+ - one short reset flash - the request was successfully sent to bridge emulator
  - 4 flashes - Arduino OTA is enabled
  - 6 flashes - http error
  - 8 flashes - bridge emulator unreachable
- - 10 flashes - unable to connect to wifi network in 10 seconds.
+ - 10 flashes - unable to connect to wifi network within 10 seconds.
 
 ## Images
 
