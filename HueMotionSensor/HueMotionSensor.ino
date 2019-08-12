@@ -141,6 +141,7 @@ void loop() {
     counter++;
     if (counter == 100) {
       blinkLed(10);
+      goingToSleep();
     }
   }
 }
