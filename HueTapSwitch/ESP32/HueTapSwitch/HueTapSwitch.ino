@@ -1,17 +1,6 @@
 /*
   Program written by JelleWho, based on DIYHUE ESP8266
   Board: https://dl.espressif.com/dl/package_esp32_index.json
-
-  NOTES:
-    -no shutdown_voltage control. (no official support for ESP32 available)
-    -Button pins are hardcoded into WakeUp-Mask (these double as wake-up pins (like RESET wakes the ESP8266))
-      Thought these pins are hardcoded into the WakeUp bitmask (uint64_t Mask = 0xF00000000) you could change these
-      00001 = wake up with pin 1. 0101 = Wake up with pin 3 or 1.
-      I tried to auto generate this, but it didn't seem stable/fast enough
-      00000000000000000000000000000111100000000000000000000000000000000 = 0xF00000000 (pin 32,33,34,35)
-    -Make sure to pull Button pins down, if there left floating (not connected) they might false trigger.
-    -Existing firmware can be updated Over the Air (OTA). press button 1+4,
-      The <LED_BUILTIN> will flash <EveryXms> also note it goes to auto sleep after <AutoSleepAfterXms> after boot (in case 1+4 are accidently pressed)
 */
 
 #include <WiFi.h>
